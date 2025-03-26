@@ -1,28 +1,29 @@
-7th project
+# 🔢 push_swap – Sorting With Style (and Stacks)
 
-You have 2 stacks named a and b.
-At the beginning: The stack a contains a random amount of negative and/or positive numbers without duplicates.
-The stack b is empty. The first argument should be at the top of the stack.
+For my seventh project at Hive Helsinki, I tackled push_swap, a sorting algorithm challenge using two stacks and a limited set of operations. 🏗️
 
-The goal is to sort in ascending order numbers into stack with the lowest possible number of operations.
-Using following operations:
-sa (swap a): Swap the first 2 elements at the top of stack a.
-sb (swap b): Swap the first 2 elements at the top of stack b.
-ss : sa and sb at the same time.
-pa (push a): Take the first element at the top of b and put it at the top of a.
-pb (push b): Take the first element at the top of a and put it at the top of b.
-ra (rotate a): Shift up all elements of stack a by 1. The first element becomes the last one.
-rb (rotate b): Shift up all elements of stack b by 1. The first element becomes the last one.
-rr : ra and rb at the same time.
-rra (reverse rotate a): Shift down all elements of stack a by 1. The last element becomes the first one.
-rrb (reverse rotate b): Shift down all elements of stack b by 1. The last element becomes the first one.
-rrr : rra and rrb at the same time.
+At the start:
 
-The program must display the smallest list of instructions possible to sort the stack
-a, the smallest number being at the top.
-Instructions must be separated by a ’\n’ and nothing else.
+    Stack A holds a random set of unique numbers (positive and negative).
 
-We had a checker to use to check if the operations the program outputs sorts the stack.
-For maximum points:
-100 random numbers needed to be sorted 700 operations or less.
-500 random numbers needed to be sorted 5500 operations or less.
+    Stack B is empty.
+
+    The goal? Sort Stack A in ascending order using the fewest moves possible! 🏆
+
+To do this, I could only use a set of predefined operations:
+🔄 Swaps: sa, sb, ss (swap top elements)
+📤 Pushes: pa, pb (move elements between stacks)
+🔄 Rotations: ra, rb, rr (shift elements up)
+🔄 Reverse Rotations: rra, rrb, rrr (shift elements down)
+
+The program outputs the smallest possible list of instructions needed to sort Stack A, with each instruction printed on a new line. 📜
+
+To make sure everything worked, we used a checker that verified whether our moves resulted in a properly sorted stack. ✅
+
+For max points:
+
+    100 numbers sorted in 700 moves or less
+
+    500 numbers sorted in 5500 moves or less
+
+🚀 This project was a huge logic and algorithm challenge, but incredibly fun!
